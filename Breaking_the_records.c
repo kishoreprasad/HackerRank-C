@@ -7,7 +7,7 @@ int breakingRecords(int scores[])
   {
     if(scores[i]>highest_score)
     {
-      scores[i]=highest_score;
+      highest_score=scores[i];
       high++;
     }
   }
@@ -15,7 +15,7 @@ int breakingRecords(int scores[])
   {
     if(scores[i]<lowest_score)
     {
-      scores[i]=lowest_score;
+      lowest_score=scores[i];
       low++;
     }
   }
