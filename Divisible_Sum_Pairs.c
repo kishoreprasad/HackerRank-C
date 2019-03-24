@@ -15,11 +15,11 @@ int divisibleSumPairs(int ar[])
 }
 main()
 {
-  scanf("%d %d",n,k);
+  scanf("%d %d",&n,&k);
   int ar[n];
   for(int i=0;i<n;i++)
   {
-    scanf("%d",ar[i]);
+    scanf("%d",&ar[i]);
   }
   printf("%d",divisibleSumPairs(ar));
 }
