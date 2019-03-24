@@ -1,8 +1,8 @@
 #include<stdio.h>
 int n;
-breakingRecords(int scores[])
+int breakingRecords(int scores[])
 {
-  int highest_score=scores(0),lowest_score=scores(0),high=0,low=0;
+  int highest_score=scores[0],lowest_score=scores[0],high=0,low=0;
   for(int i=0;i<n;i++)
   {
     if(scores[i]>highest_score)
