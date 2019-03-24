@@ -21,5 +21,5 @@ main()
   {
     scanf("%d",ar[i]);
   }
-  printf("%d",divisibleSumPairs);
+  printf("%d",divisibleSumPairs(ar));
 }
