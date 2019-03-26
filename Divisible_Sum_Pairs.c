@@ -7,7 +7,7 @@ int divisibleSumPairs(int ar[])
   {
     for(int j=0;j<n;j++)
     {
-    if(ar[i]<ar[j] && ar[i]+ar[j]%k==0)
+    if(ar[i]<ar[j] && (ar[i]+ar[j])%k==0)
       count++;
     }
   }
