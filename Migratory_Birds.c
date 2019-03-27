@@ -3,6 +3,7 @@ int n, type[5];
 int migratoryBirds(int arr[])
 {
   int temp;
+  static int i;
   for(int i=0;i<n;i++)
   {
     if(arr[i]==1)
@@ -16,19 +17,13 @@ int migratoryBirds(int arr[])
     if(arr[i]==5)
     type[4]++;
   }
-  for(int i=0;i<5;i++)
+  int max=type[0];
+  for(i=1;i<5;i++)
   {
-    for(int j=i+1;i<5;i++)
-    {
-      if(type[i]>type[j])
-      {
-        type[i]=temp;
-        type[i]=type[j];
-        temp=type[j];
-      }
-    }
+    if(type[i]>max)
+    max=type[i];
   }
-  return type[4];
+  return i;
 }
 main()
 {
